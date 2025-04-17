@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "965399662795",
+    "project_id": "videoshorttuan11",
+    "storage_bucket": "videoshorttuan11.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965399662795:android:b2d227a636b4d1f800cb4e",
+        "android_client_info": {
+          "package_name": "vn.iotstar.bai10"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDIiGL4V0G1OGvVhciyJGReJ1ES6BBxBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

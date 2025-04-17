@@ -50,6 +50,11 @@ dependencies {
     // Firebase dependencies
     implementation(platform(libs.firebase.bom)) // Quản lý phiên bản qua BOM
 
+    implementation(libs.retrofit)
+    implementation(libs.converterGson)
+    implementation(libs.volley)
+    implementation(libs.gson)
+
     implementation(libs.firebase.auth)
     implementation(libs.firebase.database)
     implementation(libs.firebase.database.ktx) // KTX dành cho Realtime Database

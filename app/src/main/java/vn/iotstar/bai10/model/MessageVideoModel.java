@@ -1,20 +1,27 @@
-package vn.iotstar.bai10.models;
+package vn.iotstar.bai10.model;
 
 import java.io.Serializable;
 import java.util.List;
 
 public class MessageVideoModel implements Serializable {
     private boolean success;
-    private String message;
+    private  String message;
     private List<VideoModel> result;
 
-    public MessageVideoModel() {
-
-    }
-
-    public MessageVideoModel(String message, List<VideoModel> result, boolean success) {
+    public MessageVideoModel(boolean success, String message, List<VideoModel> result) {
+        this.success = success;
         this.message = message;
         this.result = result;
+    }
+
+    public MessageVideoModel() {
+    }
+
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public void setSuccess(boolean success) {
         this.success = success;
     }
 
@@ -32,13 +39,5 @@ public class MessageVideoModel implements Serializable {
 
     public void setResult(List<VideoModel> result) {
         this.result = result;
-    }
-
-    public boolean isSuccess() {
-        return success;
-    }
-
-    public void setSuccess(boolean success) {
-        this.success = success;
     }
 }

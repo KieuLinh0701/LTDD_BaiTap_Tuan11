@@ -1,6 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.google.services)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -43,22 +43,23 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-
-    // Google Play Services Auth
-    implementation(libs.play.services.auth)
-
-    // Firebase dependencies
-    implementation(platform(libs.firebase.bom)) // Quản lý phiên bản qua BOM
-
-    implementation(libs.retrofit)
-    implementation(libs.converterGson)
-    implementation(libs.volley)
-    implementation(libs.gson)
-
+    implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.auth)
     implementation(libs.firebase.database)
-    implementation(libs.firebase.database.ktx) // KTX dành cho Realtime Database
+    implementation(libs.firebase.database.ktx)
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.storage)
     implementation(libs.firebase.ui.database)
+    implementation(libs.play.services.auth)
+    implementation(libs.circleimageview)
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:3.12.0")
+    //thu viện load image
+    implementation("com.github.bumptech.glide:glide:4.14.2")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")
+
+    implementation("com.github.TutorialsAndroid:GButton:v1.0.19")
+    implementation ("com.google.android.gms:play-services-auth:20.4.0")
+    implementation("com.cloudinary:cloudinary-android:2.3.1")
 }
